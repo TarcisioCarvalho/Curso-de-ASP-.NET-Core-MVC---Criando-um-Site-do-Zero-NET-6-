@@ -1,12 +1,14 @@
 ﻿@model IEnumerable<LanchesMac.Models.Lanche>
 
-@{
-    ViewData["Title"] = "List";
-}
 
 <div>
-    <h2>Todos os Lanches</h2>
+    <h2>@ViewData["Titulo"]</h2>
 </div>
+@ViewData["Data"]
+
+<hr/>
+    @ViewBag.Lanches
+<hr/>
 
 @foreach (var lanche in Model)
 {
