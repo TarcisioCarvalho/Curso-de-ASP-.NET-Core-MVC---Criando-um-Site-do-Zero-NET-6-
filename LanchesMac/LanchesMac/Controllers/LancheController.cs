@@ -1,5 +1,7 @@
-﻿using LanchesMac.Repositories;
+﻿using LanchesMac.Models;
+using LanchesMac.Repositories;
 using LanchesMac.Repositories.Interfaces;
+using LanchesMac.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LanchesMac.Controllers
@@ -15,15 +17,19 @@ namespace LanchesMac.Controllers
 
         public IActionResult List()
         {
-            var lanches = _lancheRepository.Lanches;
+            //var lanches = _lancheRepository.Lanches;
             ViewData["Titulo"] = "Todos os Lanches";
             ViewData["Data"] = DateTime.Now;
 
-            var lanchesTotal = lanches.Count();
+            
 
+            //return View(_lancheRepository.Lanches);
+            var lanchesViewModel = new LanchesListViewModel();
+            lanchesViewModel.Lanches = _lancheRepository.Lanches;
+            lanchesViewModel.CategoriaAtual = "Categoria Atual";
+            var lanchesTotal = lanchesViewModel.Lanches.Count();
             ViewBag.Lanches = "O Total de Lanches é " + lanchesTotal;
-
-            return View(_lancheRepository.Lanches);
+            return View(lanchesViewModel);
         }
     }
 }
