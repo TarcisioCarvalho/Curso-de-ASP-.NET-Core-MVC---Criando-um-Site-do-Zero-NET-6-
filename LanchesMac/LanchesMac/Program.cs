@@ -10,9 +10,13 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddTransient<ICategoriaRepository,CategoriaRepository>();
 builder.Services.AddTransient<ILancheRepository, LancheRepository>();
-
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddMemoryCache();
+builder.Services.AddSession();
+
 
 var app = builder.Build();
 
@@ -30,6 +34,8 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.UseSession();
 
 app.MapControllerRoute(
     name: "default",
