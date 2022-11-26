@@ -26,9 +26,35 @@
                         <td class="text-left">@item.Lanche.Nome</td>
                         <td class="text-right">@item.Lanche.Preco.ToString("C")</td>
                         <td class="text-right">@((item.Lanche.Preco * item.Quantidade).ToString("C"))</td>
+                        <td class="text-center">
+                            <a asp-controller="CarrinhoCompra" asp-action="RemoverItemDoCarrinhoCompra"
+                            asp-route-LancheId = "@item.Lanche.LancheId"
+                            >
+                            <img src="~/assets/img/remove.png"/>
+                            </a>
+                        </td>
                     </tr>
                 }
             </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" class="text-right">
+                        Total: 
+                    </td>
+                    <td class="text-right">
+                        @Model.CarrinhoCompraTotal.ToString("C")
+                    </td>
+                </tr>
+            </tfoot>
         </table>
+
+        <div class="text-right">
+            <div class="btn-group">
+                <a class="btn btn-success" asp-controller="Pedido" asp-action="Checkout">Encerrar Pedido</a>
+                &ensp;&ensp;&ensp;
+                <a class="btn btn-primary" asp-controller="Lanche" asp-action="List">Continuar Comprando</a>
+                <br/>
+            </div>
+        </div>
     </div>
 </div>

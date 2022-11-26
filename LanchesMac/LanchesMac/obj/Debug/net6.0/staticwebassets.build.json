@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+fgc7ytGmaQz7YPxUYqm4LrrBRXW+zBNaX07hnPHz9k=",
+  "Hash": "oAt/tTEs43wpwfzitzCA7vBAxokzoj0FRaxQJoOuOYc=",
   "Source": "LanchesMac",
   "BasePath": "_content/LanchesMac",
   "Mode": "Default",
@@ -102,6 +102,40 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\carousel13.jpg"
     },
     {
+      "Identity": "C:\\Users\\tarci\\Documents\\Curso-de-ASP-.NET-Core-MVC---Criando-um-Site-do-Zero-NET-6-\\LanchesMac\\LanchesMac\\wwwroot\\assets\\img\\Full-Cart-icon.png",
+      "SourceId": "LanchesMac",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tarci\\Documents\\Curso-de-ASP-.NET-Core-MVC---Criando-um-Site-do-Zero-NET-6-\\LanchesMac\\LanchesMac\\wwwroot\\",
+      "BasePath": "_content/LanchesMac",
+      "RelativePath": "assets/img/Full-Cart-icon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\Full-Cart-icon.png"
+    },
+    {
+      "Identity": "C:\\Users\\tarci\\Documents\\Curso-de-ASP-.NET-Core-MVC---Criando-um-Site-do-Zero-NET-6-\\LanchesMac\\LanchesMac\\wwwroot\\assets\\img\\remove.png",
+      "SourceId": "LanchesMac",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tarci\\Documents\\Curso-de-ASP-.NET-Core-MVC---Criando-um-Site-do-Zero-NET-6-\\LanchesMac\\LanchesMac\\wwwroot\\",
+      "BasePath": "_content/LanchesMac",
+      "RelativePath": "assets/img/remove.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\remove.png"
+    },
+    {
       "Identity": "C:\\Users\\tarci\\Documents\\Curso-de-ASP-.NET-Core-MVC---Criando-um-Site-do-Zero-NET-6-\\LanchesMac\\LanchesMac\\wwwroot\\css\\site.css",
       "SourceId": "LanchesMac",
       "SourceType": "Discovered",
@@ -117,23 +151,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
-    },
-    {
-      "Identity": "C:\\Users\\tarci\\Documents\\Curso-de-ASP-.NET-Core-MVC---Criando-um-Site-do-Zero-NET-6-\\LanchesMac\\LanchesMac\\wwwroot\\favicon.ico",
-      "SourceId": "LanchesMac",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\tarci\\Documents\\Curso-de-ASP-.NET-Core-MVC---Criando-um-Site-do-Zero-NET-6-\\LanchesMac\\LanchesMac\\wwwroot\\",
-      "BasePath": "_content/LanchesMac",
-      "RelativePath": "favicon.ico",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
       "Identity": "C:\\Users\\tarci\\Documents\\Curso-de-ASP-.NET-Core-MVC---Criando-um-Site-do-Zero-NET-6-\\LanchesMac\\LanchesMac\\wwwroot\\js\\site.js",
